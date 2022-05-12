@@ -191,7 +191,7 @@ function pmprocpt_options_validate( $input ) {
 		};
 	}
 	if ( ! empty( $input['redirect_to'] ) ) {
-		$newinput['redirect_to'][] = trim( preg_replace( '[^a-zA-Z0-9\-]', '', $input['redirect_to'] ) );
+		$newinput['redirect_to'] = trim( preg_replace( '[^a-zA-Z0-9\-]', '', $input['redirect_to'] ) );
 		;
 	}
 
